@@ -198,15 +198,12 @@
     <Compile Include="TokenHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\main.js" />
+    <Content Include="app\module.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="node_modules\core-js\client\shim.min.js" />
-    <Content Include="node_modules\reflect-metadata\Reflect.js" />
-    <Content Include="node_modules\systemjs\dist\system.src.js" />
-    <Content Include="node_modules\zone.js\dist\zone.js" />
-    <Content Include="Scripts\App\app.js" />
-    <Content Include="Scripts\App\main.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -237,15 +234,18 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="app\app.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\module.js.map" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\systemjs.config.js" />
     <None Include="Properties\PublishProfiles\AngularTwoApp - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\AngularTwoApp - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="App\app.ts" />
-    <TypeScriptCompile Include="App\main.ts" />
-    <TypeScriptCompile Include="App\module.ts" />
+    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\module.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

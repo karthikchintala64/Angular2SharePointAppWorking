@@ -12,7 +12,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "./Scripts/App",
     "removeComments": false,
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
