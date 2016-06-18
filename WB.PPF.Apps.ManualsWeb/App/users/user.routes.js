@@ -2,7 +2,7 @@
 const usersList_1 = require('./usersList');
 exports.UsersRoutes = [
     {
-        path: '/users',
+        path: 'users',
         component: usersList_1.UsersList,
         index: true
     }

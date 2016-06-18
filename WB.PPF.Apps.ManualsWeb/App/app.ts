@@ -4,8 +4,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     selector: 'app-main',
     template: `<h1>test</h1>
  <nav>
-      <a [routerLink]="['/crisis-center']">Crisis Center</a>
-      <a [routerLink]="['/heroes']">Heroes</a>
+      <a [routerLink]="['/heroes']">Users</a>
     </nav>
     <router-outlet></router-outlet>
 `,

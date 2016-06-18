@@ -3,7 +3,7 @@
  * Adjust as necessary for your application needs.
  */
 (function (global) {
-    var routerVer = '@3.0.0-alpha.3'; // lock router version
+    var routerVer = '@3.0.0-alpha.7'; // lock router version
 
   // map tells the System loader where to look for things
   var map = {
@@ -48,6 +48,9 @@
 
   // Add package entries for angular packages
   ngPackageNames.forEach(setPackageConfig);
+
+    // No umd for router yet
+  packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
 
   var config = {
     map: map,
