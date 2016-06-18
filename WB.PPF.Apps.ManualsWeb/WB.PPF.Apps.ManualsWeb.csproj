@@ -256,8 +256,12 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\apptest.ts" />
+    <TypeScriptCompile Include="app\app.routes.ts" />
+    <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\users\user.routes.ts" />
+    <TypeScriptCompile Include="app\users\userService.ts" />
+    <TypeScriptCompile Include="app\users\usersList.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
