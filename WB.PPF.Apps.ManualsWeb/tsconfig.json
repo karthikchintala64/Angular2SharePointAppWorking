@@ -15,7 +15,8 @@
     "removeComments": false,
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es6"
+    "target": "es6",
+    "outDir": "./app"
   },
   "exclude": [
     "node_modules",

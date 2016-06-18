@@ -198,10 +198,6 @@
     <Compile Include="TokenHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.js" />
-    <Content Include="app\build.js" />
-    <Content Include="app\main.js" />
-    <Content Include="app\module.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -253,10 +249,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="package.json" />
-    <Content Include="app\app.js.map" />
-    <Content Include="app\main.js.map" />
-    <Content Include="app\module.js.map" />
-    <Content Include="app\build.js.map" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\systemjs.config.js" />
     <None Include="Properties\PublishProfiles\AngularTwoApp - FTP.pubxml" />
@@ -264,9 +256,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\apptest.ts" />
     <TypeScriptCompile Include="app\main.ts" />
-    <TypeScriptCompile Include="app\module.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
