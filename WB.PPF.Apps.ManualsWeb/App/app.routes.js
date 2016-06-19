@@ -1,9 +1,10 @@
 "use strict";
 const router_1 = require('@angular/router');
-const usersList_1 = require('./users/usersList');
+const user_routes_1 = require('./users/user.routes');
+const welcome_1 = require('./welcome');
 exports.routes = [
-    { path: '/crisis-center', component: usersList_1.UsersList },
-    { path: '/heroes', component: usersList_1.UsersList }
+    { path: '/', component: welcome_1.WelcomeComponent },
+    ...user_routes_1.UsersRoutes
 ];
 exports.APP_ROUTER_PROVIDERS = [
     router_1.provideRouter(exports.routes)

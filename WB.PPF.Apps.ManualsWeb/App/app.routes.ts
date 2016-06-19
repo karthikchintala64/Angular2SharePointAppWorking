@@ -1,9 +1,10 @@
 ﻿import { provideRouter, RouterConfig } from '@angular/router';
-import { UsersList } from './users/usersList'
+import { UsersRoutes } from './users/user.routes'
+import { WelcomeComponent } from './welcome'
 
 export const routes: RouterConfig = [
-    { path: '/crisis-center', component: UsersList  },
-    { path: '/heroes', component: UsersList }
+    { path: '/', component: WelcomeComponent },
+    ...UsersRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [
