@@ -1,9 +1,9 @@
 ﻿import { provideRouter, RouterConfig } from '@angular/router';
-import { UsersList } from './users/usersList';
-import { UsersRoutes } from './users/user.routes';
+import { UsersList } from './users/usersList'
 
-const routes: RouterConfig = [
-    { path: '', component: UsersList },
+export const routes: RouterConfig = [
+    { path: '/crisis-center', component: UsersList  },
+    { path: '/heroes', component: UsersList }
 ];
 
 export const APP_ROUTER_PROVIDERS = [

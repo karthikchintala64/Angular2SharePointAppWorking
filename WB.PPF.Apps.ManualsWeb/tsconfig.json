@@ -19,6 +19,9 @@
     "outDir": "./app"
   },
   "exclude": [
+    "typings/browser.d.ts",
+    "typings/browser",
+    "lib/libFileToExclude.d.ts",
     "node_modules",
     "wwwroot"
   ]
