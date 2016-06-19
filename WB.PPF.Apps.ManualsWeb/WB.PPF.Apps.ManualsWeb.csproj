@@ -198,6 +198,13 @@
     <Compile Include="TokenHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.html" />
+    <Content Include="app\products\products.css" />
+    <Content Include="app\products\products.html" />
+    <Content Include="app\template\template.css" />
+    <Content Include="app\template\template.html" />
+    <Content Include="app\users\users.css" />
+    <Content Include="app\users\users.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -259,7 +266,14 @@
     <TypeScriptCompile Include="app\app.routes.ts" />
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\products\products.routes.ts" />
+    <TypeScriptCompile Include="app\products\products.ts" />
+    <TypeScriptCompile Include="app\products\productsService.ts" />
+    <TypeScriptCompile Include="app\template\template.routes.ts" />
+    <TypeScriptCompile Include="app\template\templateService.ts" />
+    <TypeScriptCompile Include="app\template\template.ts" />
     <TypeScriptCompile Include="app\users\user.routes.ts" />
+    <TypeScriptCompile Include="app\users\user.ts" />
     <TypeScriptCompile Include="app\users\userService.ts" />
     <TypeScriptCompile Include="app\users\usersList.ts" />
     <TypeScriptCompile Include="app\welcome.ts" />

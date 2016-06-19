@@ -1,0 +1,12 @@
+﻿<ul class="nav nav-tabs">
+    <li #tab1>
+        <a [routerLink]="['/Welcome']" (click)="activateTab(tab1);deactivateTab(tab2);deactivateTab(tab3)">Home</a>
+    </li>
+    <li #tab2>
+        <a [routerLink]="['/Users']" (click)="activateTab(tab2);deactivateTab(tab1);deactivateTab(tab3)">Users</a>
+    </li>
+    <li #tab3>
+        <a [routerLink]="['/Products']" (click)="activateTab(tab3);deactivateTab(tab1);deactivateTab(tab2)">Products</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>

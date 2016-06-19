@@ -2,7 +2,7 @@
 
 export const UsersRoutes = [
     {
-        path: '/users',
+        path: '/Users',
         component: UsersList
     }
 ];

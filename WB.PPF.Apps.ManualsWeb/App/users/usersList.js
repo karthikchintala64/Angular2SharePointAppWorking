@@ -9,13 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
+const userService_1 = require('./userService');
 let UsersList = class UsersList {
+    constructor(_userService) {
+        this._userService = _userService;
+    }
+    ngOnInit() {
+        this.users = this._userService.getUsers(0);
+    }
 };
 UsersList = __decorate([
     core_1.Component({
-        template: '<h1>Users list</h1>'
+        templateUrl: './app/users/users.html',
+        styleUrls: ['./app/users/users.css'],
+        providers: [userService_1.UserService]
     }), 
-    __metadata('design:paramtypes', [])
+    __metadata('design:paramtypes', [userService_1.UserService])
 ], UsersList);
 exports.UsersList = UsersList;
 //# sourceMappingURL=usersList.js.map

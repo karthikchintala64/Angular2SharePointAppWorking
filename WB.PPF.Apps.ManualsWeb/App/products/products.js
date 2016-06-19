@@ -9,22 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const router_1 = require('@angular/router');
-let AppComponent = class AppComponent {
-    activateTab(elem) {
-        elem.className = 'active';
-    }
-    deactivateTab(elem) {
-        elem.className = '';
-    }
+let ProductTemplate = class ProductTemplate {
 };
-AppComponent = __decorate([
+ProductTemplate = __decorate([
     core_1.Component({
-        selector: 'app-main',
-        templateUrl: './app/app.html',
-        directives: [router_1.ROUTER_DIRECTIVES]
+        templateUrl: './app/products/products.html',
+        styleUrls: ['./app/products/products.css']
     }), 
     __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.js.map
+], ProductTemplate);
+exports.ProductTemplate = ProductTemplate;
+//# sourceMappingURL=products.js.map

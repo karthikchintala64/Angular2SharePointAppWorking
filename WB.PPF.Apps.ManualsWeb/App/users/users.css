@@ -1,0 +1,13 @@
+﻿img{
+    width:95px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;
+}
+img:hover { transform: scale(1.1); }
+li{
+    padding: 0;
+}
+.liPagination,.liPagination a{
+    display: block;
+}

@@ -1,15 +1,17 @@
-﻿import {Component} from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 @Component({
     selector: 'app-main',
-    template: `<h1>test</h1>
-    <nav>
-      <a [routerLink]="['/']">Home</a>
-      <a [routerLink]="['/users']">Users</a>
-    </nav>
-    <router-outlet></router-outlet>
-`,
+    templateUrl:'./app/app.html',
     directives: [ROUTER_DIRECTIVES]
 })
 
-export class AppComponent { }
+export class AppComponent {
+
+    activateTab(elem: Element) {
+        elem.className = 'active';
+    }
+    deactivateTab(elem: Element) {
+        elem.className = '';
+    }
+}

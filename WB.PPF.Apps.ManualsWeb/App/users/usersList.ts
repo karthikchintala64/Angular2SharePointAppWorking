@@ -1,6 +1,18 @@
 ﻿import {Component} from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { UserService } from './userService'
+import { User } from './user'
 
 @Component({
-    template: '<h1>Users list</h1>'
+    templateUrl: './app/users/users.html',
+    styleUrls: ['./app/users/users.css'],
+    providers: [UserService]
 })
-export class UsersList { }
+export class UsersList {
+    constructor(private _userService: UserService) { }
+
+    users: Observable<User[]>;
+    ngOnInit() {
+        this.users = this._userService.getUsers(0);
+    }   
+}
